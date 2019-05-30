@@ -20,9 +20,7 @@ mathjax: true
 
 #### 코드   
 ```java
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+String text = "Hello Seob";
+
+System.out.println(text);
 ```
