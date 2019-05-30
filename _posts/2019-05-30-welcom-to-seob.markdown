@@ -19,7 +19,7 @@ mathjax: true
 [facebook]: http://facebook.com/seob3126
 
 #### 코드   
-```ruby
+```java
 def print_hi(name)
   puts "Hi, #{name}"
 end
