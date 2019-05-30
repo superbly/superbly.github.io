@@ -73,7 +73,9 @@ Show posts according to the category.
 
 Show posts according to the tags.
 
+### Collections
 
+The user can collect their favorite article links with `markdown` syntax.
 
 ### Demo
 
