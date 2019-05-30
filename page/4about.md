@@ -20,9 +20,9 @@ type: page
 
 ## SNS
 
-* GitHub：[superbly](https://github.com/superbly)
-* email：kyw4869@naver.com
+* [GitHub](https://github.com/superbly)
 * [Facebook](https://www.facebook.com/seob3126)
+* email：kyw4869@naver.com
 
 
 
