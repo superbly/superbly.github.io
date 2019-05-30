@@ -191,9 +191,10 @@ Mainly shows at the footer of the site.
 # other links
 
 facebook_username: gaohaoyang.water
-github_username:  Superbly
+github_username:  Gaohaoyang
 email: kyw4869@naver.com
-
+weibo_username: 3115521wh
+zhihu_username: gaohaoyang
 
 
 description_footer:

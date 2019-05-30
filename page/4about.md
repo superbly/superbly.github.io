@@ -32,7 +32,7 @@ type: page
 
 ## 联系我
 
-* GitHub：[superbly](https://github.com/superbly)
+* GitHub：[superbly](https://github.com/Gaohaoyang)
 * email：kyw4869@naver.com
 * [Facebook](https://www.facebook.com/seob3126)
 
