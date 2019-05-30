@@ -189,16 +189,14 @@ Mainly shows at the footer of the site.
 
 ```yml
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
-dribbble_username:
 
-description_footer: 本站记录我前端之旅的沿途风景！
+facebook_username: gaohaoyang.water
+github_username:  Superbly
+email: kyw4869@naver.com
+
+
+
+description_footer:
 ```
 
 #### Comments info
