@@ -2,8 +2,8 @@
 layout: post
 title:  "블로그 테스트"
 date:   2019-05-30 15:14:54
-categories: jekyll
-tags: jekyll
+categories: Test
+tags: Test
 excerpt: 김한섭 블로그 테스트
 mathjax: true
 ---
