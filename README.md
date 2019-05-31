@@ -95,7 +95,7 @@ The only thing you need do is to change the `short_name` in the file `_config.ym
 # comments
 # two ways to comment, only choose one, and use your own short name
 duoshuo_shortname: #xxx
-disqus_shortname: xxx
+disqus_shortname: superbly
 ```
 
 ### Post Contents
