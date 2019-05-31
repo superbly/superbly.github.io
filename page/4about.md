@@ -22,9 +22,13 @@ type: page
 
 * [GitHub](https://github.com/superbly)
 * [Facebook](https://www.facebook.com/seob3126)
-* email：kyw4869@naver.com
+* Email：kyw4869@naver.com
+* Kakao : ha4627  
 
+## Certificate
 
+* 정보처리기사  
+* 정보처리기능사  
 
 
 
