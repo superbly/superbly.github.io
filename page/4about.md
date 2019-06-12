@@ -11,15 +11,15 @@ type: page
 
 ## 김한섭
 
-* 1994.06.27
-
+* 1994.06.27  
+* Kakao : ha4627  
+* Email：kyw4869@naver.com  
 
 ## SNS
 
 * [GitHub](https://github.com/superbly)
 * [Facebook](https://www.facebook.com/seob3126)
-* Email：kyw4869@naver.com
-* Kakao : ha4627  
+
 
 ## Certificate
 
