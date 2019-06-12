@@ -14,6 +14,7 @@ type: page
 * 1994.06.27  
 * Kakao : ha4627  
 * Email：kyw4869@naver.com  
+* Phone : 010-4930-3126  
 
 ## SNS
 
