@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "DB 정규화 알아보기"
+title:  "마크다운 사용법"
 date:   2019-05-31 20:00:00
-categories: DB
-tags: 정규화
+categories: Markdown
+tags: Markdown
 mathjax: true
 ---
 
