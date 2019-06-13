@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "블로그 테스트2"
-date:   2019-05-30 15:14:54
-categories: Test
-tags: Test
-excerpt: 김한섭 블로그 테스트
+title:  "DB 정규화 알아보기"
+date:   2019-05-31 20:00:00
+categories: DB
+tags: 정규화
 mathjax: true
 ---
+
 * content
 {:toc}
 
