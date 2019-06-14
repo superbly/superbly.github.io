@@ -12,6 +12,7 @@ type: page
 ## 김한섭
 
 * 1994.06.27  
+* Major : Information Communication Engineering  
 * Kakao : ha4627  
 * Email：kyw4869@naver.com  
 * Phone : 010-4930-3126  
