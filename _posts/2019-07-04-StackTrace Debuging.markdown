@@ -96,7 +96,6 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 
 ### 참고  
 
-* [신입 개발자 혼자 공부하는 방법][stackTrace1]  
+* [신입 개발자 혼자 공부하는 방법](http://okky.kr/article/597494)
 
-[stackTrace1]: http://okky.kr/article/597494
 ---
