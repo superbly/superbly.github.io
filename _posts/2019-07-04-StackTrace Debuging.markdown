@@ -64,6 +64,7 @@ at ... main() 이렇게 되어있는 부분이 있는데
 
 이것은 메소드를 호출한 순서에 따라 스택트레이스가 찍힌다는 뜻이다.
 
+---
 ### 스택트레이스 읽는 순서  
 
 Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
@@ -79,9 +80,12 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
     - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
     - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
 
+    그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.  
+
 2. 예외 클래스  
 
 
+---
 
 
 
@@ -94,5 +98,9 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 
 
 
-참고
+
+
+
+
+### 참고  
 [신입개발자가 혼자 공부하는 방법]: https://okky.kr/article/597494
