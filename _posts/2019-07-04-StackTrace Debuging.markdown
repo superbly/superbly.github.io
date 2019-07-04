@@ -52,6 +52,34 @@ at 예외발생한클래스경로.클래스이름.메소드이름(클래스이�
 
 스택트레이스는 이렇게 구성되어 있다.
 
+또한 잘 살펴보면
+
+at ... three()
+
+at ... two()
+
+at ... one()
+
+at ... main() 이렇게 되어있는 부분이 있는데
+
+이것은 메소드를 호출한 순서에 따라 스택트레이스가 찍힌다는 뜻이다.
+
+### 스택트레이스 읽는 순서  
+
+Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at StackTraceTest.three(StackTraceTest.java:22)
+	at StackTraceTest.two(StackTraceTest.java:17)
+	at StackTraceTest.one(StackTraceTest.java:12)
+	at StackTraceTest.main(StackTraceTest.java:7)
+
+1. 예외메시지
+    - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
+    - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`
+
+2. 예외 클래스
 
 
 
@@ -66,23 +94,5 @@ at 예외발생한클래스경로.클래스이름.메소드이름(클래스이�
 
 
 
-
-
-## 마크다운 사용법    
-## 텍스트    
-기본텍스트 : 기본텍스트  
-하이라이트 : `하이라이트`  
-
-## 링크    
-나의 [페이스북][facebook] 바로 가기.  
-페이스북 텍스트를 클릭하면 페이스북 주소와 바로 연결된다.  
-
-[facebook]: http://facebook.com/seob3126
-
-## 코드   
-```java
-String text = "Hello Seob";
-
-System.out.println(text);
-```
----
+참고
+[신입개발자가 혼자 공부하는 방법]: https://okky.kr/article/597494
