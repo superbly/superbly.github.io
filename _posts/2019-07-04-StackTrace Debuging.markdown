@@ -22,6 +22,8 @@ mathjax: true
 
 `스택트레이스를 읽고 문제를 해결하는 능력은 생산성을 엄청나게 늘려준다는 것을 알게되었다.`
 
+
+
 ---
 ```java
 public class StackTraceTest
@@ -64,7 +66,7 @@ at ... main() 이렇게 되어있는 부분이 있는데
 
 이것은 메소드를 호출한 순서에 따라 스택트레이스가 찍힌다는 뜻이다.
 
-
+---
 ### 스택트레이스 읽는 순서  
 
 Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
@@ -85,8 +87,7 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 ![numberformatexception](/img/numberformatexception.png)
 
 
-2. 예외 클래스  
-
+---
 
 
 
