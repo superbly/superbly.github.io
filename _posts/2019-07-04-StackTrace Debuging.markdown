@@ -82,7 +82,7 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
     - 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.  
 
 ![googleSearch](/img/googleSearch.png)
-![NumberFormatException](/img/NumberFormatException.png)
+![numberformatexception](/img/numberformatexception.png)
 
 
 2. 예외 클래스  
