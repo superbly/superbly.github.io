@@ -66,6 +66,8 @@ at ... main() 이렇게 되어있는 부분이 있는데
 
 이것은 메소드를 호출한 순서에 따라 스택트레이스가 찍힌다는 뜻이다.
 
+
+
 ---
 ### 스택트레이스 읽는 순서  
 
@@ -84,15 +86,16 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
     - 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.  
 
 ![googleSearch](/img/googleSearch.png)
+
 ![numberformatexception](/img/numberformatexception.png)
 
-
+2. 예외클래스
 ---
 
 
 
 ### 참고  
 
-* [facebook]: http://facebook.com/seob3126
-* [신입개발자가 혼자 공부하는 방법]: http://okky.kr/article/597494
+* [신입 개발자 혼자 공부하는 방법][stackTrace1]
+ [stackTrace1]: http://okky.kr/article/597494
 ---
