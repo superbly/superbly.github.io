@@ -80,7 +80,7 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 	at StackTraceTest.one(StackTraceTest.java:12)  
 	at StackTraceTest.main(StackTraceTest.java:7)  
 
-1. 예외메시지
+  1. 예외메시지
     - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
     - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
     - 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.  
@@ -89,7 +89,7 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 
 ![numberformatexception](/img/numberformatexception.png)
 
-2. 예외클래스
+  2. 예외클래스
     - 1
     - 2
     - 3
@@ -101,5 +101,3 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 ### 참고  
 
 * [신입 개발자 혼자 공부하는 방법](http://okky.kr/article/597494)
-
----
