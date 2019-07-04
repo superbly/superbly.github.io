@@ -43,7 +43,7 @@ public class StackTraceTest
 }
 ```
 
-![ex_screenshot](./img/trace.png)
+![ex_screenshot](/img/trace.png)
 
 
 
