@@ -65,7 +65,6 @@ at ... main() 이렇게 되어있는 부분이 있는데
 이것은 메소드를 호출한 순서에 따라 스택트레이스가 찍힌다는 뜻이다.
 
 ---
----
 ### 스택트레이스 읽는 순서  
 
 Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
@@ -102,3 +101,4 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 
 ### 참고  
 [신입개발자가 혼자 공부하는 방법]: https://okky.kr/article/597494
+---
