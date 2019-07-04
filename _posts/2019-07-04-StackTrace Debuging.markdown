@@ -89,13 +89,14 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 
 ![numberformatexception](/img/numberformatexception.png)
 
-2. 예외클래스
+2. 예외클래스  
 ---
 
 
 
 ### 참고  
 
-* [신입 개발자 혼자 공부하는 방법][stackTrace1]
- [stackTrace1]: http://okky.kr/article/597494
+* [신입 개발자 혼자 공부하는 방법][stackTrace1]  
+
+[stackTrace1]: http://okky.kr/article/597494
 ---
