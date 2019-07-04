@@ -21,7 +21,7 @@ mathjax: true
 - 똑같은 문제가 발생했을 경우 같은 실수를 반복한다.
 
 스택트레이스를 읽고 문제를 해결하는 능력은 생산성을 엄청나게 늘려준다는 것을 알게되었다.
-
+---
 ```java
 public class StackTraceTest
 {
@@ -42,9 +42,14 @@ public class StackTraceTest
     }
 }
 ```
-
+위 코드의 스택트레이스
 ![ex_screenshot](/img/trace.png)
 
+Exception in thread "쓰레드이름" 예외클래스경로.예외클래스이름 : 예외 메시지
+
+at 예외발생한클래스경로.클래스이름.메소드이름(클래스이름 : 예외발생한라인번호)
+
+스택트레이스는 이렇게 구성되어 있다.
 
 
 
