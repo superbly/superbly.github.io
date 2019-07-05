@@ -111,30 +111,30 @@ Thrown to indicate that the application has attempted to convert a string to one
 
   1번과 같은 클래스는 완성된 클래스이기 때문에 보통 내가 만든 클래스에서 오류가 발생했다고 추측하는 것이 옳다.
 ```
-  `at StackTraceTest.three(StackTraceTest.java:22)`  
+  at StackTraceTest.three(StackTraceTest.java:22)  
   at StackTraceTest.two(StackTraceTest.java:17)  
   at StackTraceTest.one(StackTraceTest.java:12)   
   at StackTraceTest.main(StackTraceTest.java:7)  
 ```
-  위와 같이 마지막으로 호출된 라인을 보면
+위와 같이 마지막으로 호출된 라인을 보면
 
-  `Integer.parseInt("superbly");`
+`Integer.parseInt("superbly");`
 
-  이 라인에 예외가 발생한 것을 알 수 있다.  
+이 라인에 예외가 발생한 것을 알 수 있다.  
 
-  저 메소드를 안다면 바로 에러를 해결할 수 있을 것이고 그것이 아니라면  
+저 메소드를 안다면 바로 에러를 해결할 수 있을 것이고 그것이 아니라면  
 
-  Integer 클래스의 parseInt()가 무슨 메소드인지 찾아 볼 수 있어야 한다.  
+Integer 클래스의 parseInt()가 무슨 메소드인지 찾아 볼 수 있어야 한다.  
 
-  java9 Integer로 검색한 후  
+java9 Integer로 검색한 후  
 
-  ![parseInt](/img/parseInt.png)  
+![parseInt](/img/parseInt.png)  
 
-  이 메소드가 무슨 기능을 하는지, 언제 예외를 `throw`하는지 알 수 있다.
+이 메소드가 무슨 기능을 하는지, 언제 예외를 `throw`하는지 알 수 있다.
 
-  이런식으로 디버깅 하는 연습을 하다보면
-  - 사용하는 메소드를 정확하게 사용하여 예외를 방지 및 처리할 수 있다.
-  - 같거나 비슷한 예외메시지가 발생하더라도 로그만 읽고도 디버깅이 가능해진다.
+이런식으로 디버깅 하는 연습을 하다보면
+- 사용하는 메소드를 정확하게 사용하여 예외를 방지 및 처리할 수 있다.
+- 같거나 비슷한 예외메시지가 발생하더라도 로그만 읽고도 디버깅이 가능해진다.
 ---
 
 
