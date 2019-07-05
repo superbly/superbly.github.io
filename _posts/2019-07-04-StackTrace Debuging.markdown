@@ -80,7 +80,7 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 	at StackTraceTest.one(StackTraceTest.java:12)  
 	at StackTraceTest.main(StackTraceTest.java:7)  
 
-예외메시지  
+**예외메시지**   
 - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
 - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
 - 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.
@@ -102,11 +102,11 @@ Thrown to indicate that the application has attempted to convert a string to one
 
 애플리케이션이 문자열을 숫자 유형 중 하나로 변환하려고 했지만 문자열의 형식이 적절하지 않음을 나타낸다는 의미이다.
 
+z
 
 
 
-
-예외클래스  
+**예외클래스**  
 - 1
 - 2
 - 3
