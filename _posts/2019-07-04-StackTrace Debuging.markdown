@@ -95,9 +95,9 @@ ex) spring 5.1.7 BeanDefinitionStoreException
 ![numberformatexception](/img/numberformatexception.png)  
 
 이미지의 맨 마지막 부분에 예외 상황에 대한 설명이 나와 있다.
-
-`Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.`    
-
+```
+Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.    
+```
 번역하면
 
 애플리케이션이 문자열을 숫자 유형 중 하나로 변환하려고 했지만 문자열의 형식이 적절하지 않음을 나타낸다는 의미이다.
