@@ -84,13 +84,13 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
 - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
 - 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.
-- 이 패키지는 java.lang 이므로 자바에서 기본적으로 제공되는 패키지라서 사용하는 jdk버전을 앞에 붙여서 검색하면 된다.
-
-![googleSearch](/img/googleSearch.png)  
+- 이 패키지는 java.lang 이므로 자바에서 기본적으로 제공되는 패키지라서 사용하는 jdk버전을 앞에 붙여서 검색하면 된다.  
 
 예외로 java에서 제공되는 것이 아니고 다른 라이브러리를 사용하다 에러가 발생하면 라이브러리 버전을 앞에 붙여서 검색하면 된다.
 
 ex) spring 5.1.7 BeanDefinitionStoreException
+
+![googleSearch](/img/googleSearch.png)  
 
 ![numberformatexception](/img/numberformatexception.png)  
 
@@ -102,15 +102,39 @@ Thrown to indicate that the application has attempted to convert a string to one
 
 애플리케이션이 문자열을 숫자 유형 중 하나로 변환하려고 했지만 문자열의 형식이 적절하지 않음을 나타낸다는 의미이다.
 
-z
-
-
 
 **예외클래스**  
-- 1
-- 2
-- 3
+- 스택트레이스를 보면 예외메시지 밑으로 메소드가 호출된 과정이 전부 적혀있다.
+- 해당 메소드의 클래스의 경로가 모두 나와있기 때문에 다음 2가지로 구분한다.
+  1. 타인이 만든 클래스
+  2. 내가 만든 클래스  
 
+  1번과 같은 클래스는 완성된 클래스이기 때문에 보통 내가 만든 클래스에서 오류가 발생했다고 추측하는 것이 옳다.
+
+  `at StackTraceTest.three(StackTraceTest.java:22)`  
+  at StackTraceTest.two(StackTraceTest.java:17)  
+  at StackTraceTest.one(StackTraceTest.java:12)   
+  at StackTraceTest.main(StackTraceTest.java:7)  
+
+  위와 같이 마지막으로 호출된 라인을 보면
+
+  `Integer.parseInt("superbly");`
+
+  이 라인에 예외가 발생한 것을 알 수 있다.  
+
+  저 메소드를 안다면 바로 에러를 해결할 수 있을 것이고 그것이 아니라면  
+
+  Integer 클래스의 parseInt()가 무슨 메소드인지 찾아 볼 수 있어야 한다.  
+
+  java9 Integer로 검색한 후  
+
+  ![parseInt](/img/parseInt.png)  
+
+  이 메소드가 무슨 기능을 하는지, 언제 예외를 `throw`하는지 알 수 있다.
+
+  이런식으로 디버깅 하는 연습을 하다보면
+  1. 사용하는 메소드를 정확하게 사용하여 예외를 방지 및 처리할 수 있다.
+  2. 같거나 비슷한 예외메시지가 발생하더라도 로그만 읽고도 디버깅이 가능해진다.
 ---
 
 
