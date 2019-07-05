@@ -99,9 +99,9 @@ ex) spring 5.1.7 BeanDefinitionStoreException
 Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.    
 ```
 번역하면
-
+```
 애플리케이션이 문자열을 숫자 유형 중 하나로 변환하려고 했지만 문자열의 형식이 적절하지 않음을 나타낸다는 의미이다.
-
+```
 
 **예외클래스**  
 - 스택트레이스를 보면 예외메시지 밑으로 메소드가 호출된 과정이 전부 적혀있다.
@@ -130,11 +130,11 @@ java9 Integer로 검색한 후
 
 ![parseInt](/img/parseInt.png)  
 
-이 메소드가 무슨 기능을 하는지, 언제 예외를 `throw`하는지 알 수 있다.
+이 메소드가 무슨 기능을 하는지, 언제 예외를 `throw`하는지 알 수 있다.  
 
 이런식으로 디버깅 하는 연습을 하다보면  
 
-- 사용하는 메소드를 정확하게 사용하여 예외를 방지 및 처리할 수 있다.
+- 사용하는 메소드를 정확하게 사용하여 예외를 방지 및 처리할 수 있다.  
 - 같거나 비슷한 예외메시지가 발생하더라도 로그만 읽고도 디버깅이 가능해진다.
 ---
 
