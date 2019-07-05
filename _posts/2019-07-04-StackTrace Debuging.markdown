@@ -109,7 +109,7 @@ Thrown to indicate that the application has attempted to convert a string to one
   1. 타인이 만든 클래스
   2. 내가 만든 클래스  
 
-  1번과 같은 클래스는 완성된 클래스이기 때문에 보통 내가 만든 클래스에서 오류가 발생했다고 추측하는 것이 옳다.
+1번과 같은 클래스는 완성된 클래스이기 때문에 보통 내가 만든 클래스에서 오류가 발생했다고 추측하는 것이 옳다.
 ```
   at StackTraceTest.three(StackTraceTest.java:22)  
   at StackTraceTest.two(StackTraceTest.java:17)  
