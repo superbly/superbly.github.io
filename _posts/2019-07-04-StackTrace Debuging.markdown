@@ -83,11 +83,28 @@ Exception in thread "main" java.lang.`NumberFormatException: For input string: "
 예외메시지  
 - 클래스를 만들 때 예외를 쉽게 찾을 수 있도록 예외메시지에서 명확하게 에러상황을 설명해줄때가 많기 때문에 예외메시지만 보고서 에러를 해결하는 경우가 많다.
 - ex) Exception in thread "main" java.lang.`NumberFormatException: For input string: "superbly"`  
-- 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.  
+- 그 다음으로 `java.lang.NumberFormatException` 이 클래스가 무슨 클래스이며 어떤 경우에 이러한 예외가 발생하는지 알아 볼 필요가 있다.
+- 이 패키지는 java.lang 이므로 자바에서 기본적으로 제공되는 패키지라서 사용하는 jdk버전을 앞에 붙여서 검색하면 된다.
 
-![googleSearch](/img/googleSearch.png)
+![googleSearch](/img/googleSearch.png)  
 
-![numberformatexception](/img/numberformatexception.png)
+예외로 java에서 제공되는 것이 아니고 다른 라이브러리를 사용하다 에러가 발생하면 라이브러리 버전을 앞에 붙여서 검색하면 된다.
+
+ex) spring 5.1.7 BeanDefinitionStoreException
+
+![numberformatexception](/img/numberformatexception.png)  
+
+이미지의 맨 마지막 부분에 예외 상황에 대한 설명이 나와 있다.
+
+`Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.`    
+
+번역하면
+
+애플리케이션이 문자열을 숫자 유형 중 하나로 변환하려고 했지만 문자열의 형식이 적절하지 않음을 나타낸다는 의미이다.
+
+
+
+
 
 예외클래스  
 - 1
