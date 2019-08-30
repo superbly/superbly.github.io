@@ -11,9 +11,9 @@ mathjax: true
 {:toc}
 
 ## 스케일 아웃 vs 스케일 업   
-  
-![trace](/img/scale.jpg)
 
+![trace](/img/scale.jpg)
+  
 
 
 ---
