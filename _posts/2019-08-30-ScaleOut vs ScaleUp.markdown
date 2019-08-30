@@ -14,6 +14,9 @@ mathjax: true
 
 ![trace](/img/scale.jpg)
 
+
+
+
 ---
 ### 스케일 아웃(Scale out)  
 ##### 정의  
