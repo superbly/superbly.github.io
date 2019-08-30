@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "스택트레이스로 디버깅하기"
-date:   2019-07-04 15:00:00
+date:   2019-07-04 15:00:01
 categories: Debug
 tags: StackTrace
 mathjax: true
