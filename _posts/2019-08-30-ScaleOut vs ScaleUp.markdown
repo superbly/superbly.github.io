@@ -48,5 +48,4 @@ ex ) 웹 서버 펌, 메일 서버나 게시판 등의 어플리케이션
 
 * [가비아 라이브러리](http://library.gabia.com/contents/infrahosting/1222)  
 * [스케일 아웃 스케일](http://okky.kr/article/597494)  
-
----
+  
