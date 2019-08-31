@@ -10,7 +10,7 @@ mathjax: true
 * content
 {:toc}
 
-    
+
 ## 텍스트  
 기본텍스트 : 기본텍스트  
 하이라이트 : `하이라이트`  
@@ -26,5 +26,4 @@ mathjax: true
 String text = "Hello Seob";
 
 System.out.println(text);
-```
----
+```  
