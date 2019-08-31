@@ -11,7 +11,7 @@ mathjax: true
 {:toc}
 
 
-
+  
 ![trace](/img/scale.jpg)
 
 
