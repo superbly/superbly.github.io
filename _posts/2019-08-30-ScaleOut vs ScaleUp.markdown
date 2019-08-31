@@ -11,7 +11,7 @@ mathjax: true
 {:toc}
 
 
-  
+
 ![trace](/img/scale.jpg)
 
 
@@ -51,4 +51,4 @@ CPU나 RAM을 추가하기로 했다면 현재 서버에 추가 부품을 장착
 ## 참고  
 
 * [가비아 라이브러리](http://library.gabia.com/contents/infrahosting/1222)  
-* [스케일 아웃 스케일](http://okky.kr/article/597494)  
+* [스케일 아웃 스케일 업](http://okky.kr/article/597494)  
