@@ -11,10 +11,8 @@ mathjax: true
 {:toc}
 
 
-  
+
 ![trace](/img/UrlUri.png)
-
-
 
 ---
 ### URI(Uniform Resource Identifier)  
@@ -68,10 +66,70 @@ URL은 리소스가 정확히 어디에 있고 어떻게 접근할 수 있는지
 
 ### URN(Uniform Resource Name)  
 
+URN은 콘텐츠를 이루는 한 리소스에 대해, 그 리소스의 위치에 영향 받지 않는 유일무이한 이름 역할을 한다.
+
+이 위치 독립적인 URN은 리소스를 여기저기로 옮기더라도 문제없이 동작한다.
+
+리소스가 그 이름을 변하지 않게 유지하는 한, 여러 종류의 네트워크 접속 프로토콜로 접근해도 문제없다.
+
+예를 들어 다음의 URN은 인터넷 표준 문서 'RFC 2141'가 어디에 있거나 상관없이 그것을 지칭하기 위해 사용할 수 있다.
+
+- urn:ietf:rfc:2141 - 'RFC 2141' 문서
+
+URN은 아직 채택되지 않아, 접할 기회가 없었을 것이다.
+
+URN은 URL의 한계로 인해 착수되었다.
+
+
+
+URL의 한계란,
+
+URL은 주소이지 실제 이름이 아니다.
+
+이 뜻은 특정 시점에 어떤 것이 위치한 곳을 알려준다는 것이다.
+
+
+
+예를 들어, 구글 검색에 노출된 https://superbly.github.io/category 링크가 있다.
+
+본인은 주소를 바꾸고 싶어 https://superbly.github.io/test/category 로 URL을 바꾸었다.
+
+다른 사람이 노출된 검색 콘텐츠에 접근 시 노출된 페이지는 찾을 수 없게 된다.
+
+이러한 단점으로 리소스가 옮겨지면 해당 URL을 더는 사용할 수 없다는 것이다.
+
+그리고 그 시점 기존 URL이 가지고 있던 객체를 찾을 방법이 없어진다.
+
+
+
+이런 문제를 예방할 수 있는 이상적인 방법은, 객체의 위치와 상관없이, 그 객체를 가리키는 실제 객체의 이름을 사용하는 것이다.
+
+그렇게 되면, 위치가 바뀌더라도 리소스의 위치를 찾을 수 있게 된다.
+
+이미 URL이 대중화되었고, 그 외 많은 이유로 아직까지는 표준이 되지 않았다.
+
+---
+### 결론  
+
+결론적으로 요약하자면, URL과 URN은 URI의 종류이다.
+
+그렇기에 모든 URL은 URI이고, 또한 모든 URN은 URI이다.
+
+그리고 위에서 언급했듯이, URL과 URN은 다르다.
+
+그렇다는 건 모든 URI는 URL이라고 말할 수 없다.
+
+
+![trace](/img/UriUrl2.png)
 
 
 
 
+단순하게 말하자면, URI는 규약이고, URL은 규약에 대한 형태라고 생각하면 혼동되지 않을 것이다.
+
+수학적으로 말하자면, URL과 URN은 부분집합이라고 생각할 수 있다.
+
+치명적으로 중요한 내용은 아니지만, URI와 URL 둘 사이의 관계에 대해 혼동이 있었던 것을 다시 정리 할 수 있어서 좋았다.
 
 
 ---
@@ -80,5 +138,5 @@ URL은 리소스가 정확히 어디에 있고 어떻게 접근할 수 있는지
 
 ## 참고  
 
-* [가비아 라이브러리](http://library.gabia.com/contents/infrahosting/1222)  
-* [스케일 아웃 스케일 업](http://okky.kr/article/597494)  
+* [마이구미의 Hello World](https://mygumi.tistory.com/139)  
+* [StackOverFlow](https://stackoverflow.com/questions/176264/what-is-the-difference-between-a-uri-a-url-and-a-urn)  
