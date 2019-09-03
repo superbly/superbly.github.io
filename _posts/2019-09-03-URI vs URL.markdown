@@ -12,11 +12,7 @@ mathjax: true
 
 
 
-
-
-![trace](/img/UrlUri.png)  
-
-
+![trace](/img/UrlUri.png)
 
 
 
