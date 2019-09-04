@@ -10,11 +10,11 @@ mathjax: true
 * content
 {:toc}
 
-### Call by value
+## Call by value
 * 메소드 호출 시에 사용되는 인자의 메모리에 저장되어 있는 값(value)을 복사하여 보낸다.
 * 예를 들어 `int a = 3`이라는 문구가 있으면 메소드에서 인자값을 받을 때 a 자체의 주소를 받는게 아니라 a의 값인 3을 받아 처리하는 방식이다.
 
-### Call by reference
+## Call by reference
 * 메소드 호출 시에사용되는 메모리에 저장되어있는 주소(Address)를 복사하여 보낸다.
 * 값이 아니라 인자 그 자체에 주소 값을 보낸다.  
 
@@ -33,7 +33,10 @@ mathjax: true
 
 reference 변수를 메소드로 주고 받을때는 Call by Reference가 발생한다.  
 
-여기 간단한 예제가 있다.
+여기 간단한 예제가 있다.  
+
+
+### 코드
 ```java
 public class ReferenceCall {
 
