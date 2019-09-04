@@ -2,7 +2,7 @@
 layout: post
 title:  "Call by value, Call by reference?"
 date:   2019-09-04 16:56:00
-categories: java
+categories: Java
 tags: java
 mathjax: true
 ---
