@@ -28,7 +28,7 @@ mathjax: true
 
 먼저 배열의 `중앙`에 위치한 요소인 a[5] 31부터 검색을 시작한다.
 
-![trace](/_posts/img/binarySearch1.png)
+![trace](_posts/img/binarySearch1.png)
 
 검색하려는 값인 39는 중앙 요소 a[5] 보다 큰 값이다.
 
