@@ -28,7 +28,7 @@ mathjax: true
 
 먼저 배열의 `중앙`에 위치한 요소인 a[5] 31부터 검색을 시작한다.
 
-![trace](_posts/img/binarySearch1.png)
+![trace](/img/binarySearch1.png)
 
 검색하려는 값인 39는 중앙 요소 a[5] 보다 큰 값이다.
 
@@ -36,7 +36,7 @@ mathjax: true
 
 그런다음 검색 범위의 중앙에 위치한 요소인 a[8] 68 이 원하는 값인지 확인한다.
 
-![trace](/_posts/img/binarySearch2.png)
+![trace](/img/binarySearch2.png)
 
 검색하려는 값인 39보다 큰 값이다.
 
@@ -46,7 +46,7 @@ mathjax: true
 
 여기서는 앞쪽의 값 39를 선택하여 원하는 값인지 확인한다. (두 인덱스 6과 7의 중앙값은 (6 + 7) / 2로 계산하여 6이 되기 때문이다.)
 
-![trace](/_posts/img/binarySearch3.png)
+![trace](/img/binarySearch3.png)
 
 39는 원하는 키의 값과 일치하므로 검색 성공이다.
 
@@ -61,7 +61,7 @@ mathjax: true
 
 라고 지정하며 검색을 시작할 때 `pl은 0`, `pr은 n - 1`, `pc는 (n - 1) / 2` 로 초기화 한다.
 
-![trace](/_posts/img/binarySearch4.png)
+![trace](/img/binarySearch4.png)
 
 여기서 중요한 점은 `이진 검색을 한 단계씩 진행할 때마다 검색 범위가 (거의)반으로 좁혀진다는 것이다.`
 
@@ -91,7 +91,7 @@ mathjax: true
 
 아래 그림은 검색 실패의 예 이다.
 
-![trace](/_posts/img/binarySearch5.png)
+![trace](/img/binarySearch5.png)
 
 1. `a` 검색할 범위는 모든 배열 a[0] ~ a[10] 이고 중앙 요소 a[5]의 값은 31이다. 키 값인 6보다 크므로 검색 범위를 a[0] ~ a[4]로 좁힙니다.  
 2. `b` 새로 검색할 범위에서 중앙 요소의 값은 15 a[2] 입니다. 키 값인 6보다 크므로 검색할 범위를 a[0] ~ a[1]로 좁힌다.
