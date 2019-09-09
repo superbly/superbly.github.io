@@ -1,0 +1,241 @@
+---
+layout: post
+title:  "Stack"
+date:   2019-09-09 14:25:00
+categories: DataStructure
+tags: Stack
+mathjax: true
+---
+
+* content
+{:toc}
+
+
+### 스택(Stack)이란?
+- 스택은 데이터를 일시적으로 저장하기 위해 사용하는 자료구조로, 데이터의 입력과 출력의 순서는 `후입선출(LIFO, Last In First Out)`이다.
+- 스택에 데이터를 넣는 작업을 `푸시(push)`라 하고, 데이터를 꺼내는 작업을 `팝(pop)`이라고 한다.
+  
+
+
+
+
+
+
+---
+아래 그림은 스택의 푸시와 팝을 보여준다.
+
+![trace](/img/stack1.png)
+
+---
+#### 스택은 어디에 사용될까?
+스택은 Java 프로그램에서 메소드를 호출하고 실행할 때 프로그램 내부에서 스택을 사용한다.
+
+```java
+void x() { /*...*/}
+
+void y() { /*...*/}
+
+void z() {
+  x();
+  y();
+}
+
+int main() {
+  z();
+}
+```
+![trace](/img/stack2.png)
+```
+a. main 메서드가 실행되기 전의 상태
+b. main 메서드를 실행한다.
+c. z 메서드를 호출한다.
+d. x 메서드를 호출한다.
+e. x 메서드가 실행을 종료하고 z 메서드로 돌아온다.
+f. y 메서드를 호출한다.
+g. y 메서드가 실행을 종료하고 z메서드로 돌아온다.
+h. z 메서드가 실행을 종료하고 main 메서드로 돌아온다.
+i. main 메서드가 실행을 종료한다.
+```
+
+
+
+---
+#### 코드
+```java
+public class Gstack<E> {    // 임의의 객체형 데이터를 쌓을 수 있는 제네릭 스택 클래스
+    private int max;        // 스택 용량
+    private int ptr;        // 스택 포인트
+    private E[] stk;        // 스택 본체
+
+    // 실행할 때 예외 : 스택이 비어있음
+    public static class EmptyGstackException extends RuntimeException {
+        public EmptyGstackException() {}
+    }
+
+    // 실행할 때 예외 ： 스택이 가득 참
+    public static class OverflowGstackException extends RuntimeException {
+        public OverflowGstackException() {}
+    }
+
+    // 생성자
+    public Gstack(int capacity){
+        ptr = 0;
+        max = capacity;
+        stk = (E[]) new Object[max];
+    }
+
+    // 스택에 x를 푸시
+    public E push(E x) throws OverflowGstackException{
+        if(ptr >= max)
+            throw new OverflowGstackException();
+        return stk[ptr++] = x;
+    }
+
+    // 푸시
+    public E pop() throws EmptyGstackException{
+        if(ptr <= 0)
+            throw new EmptyGstackException();
+        return stk[--ptr];
+    }
+
+    // 스택에서 데이터를 피크
+    public E peek() throws EmptyGstackException{
+        if(ptr <= 0)
+            throw new EmptyGstackException();
+        return stk[ptr - 1];
+    }
+
+    // 스택에서 x를 찾아서 인덱서(없으면 -1)를 반환
+    public int indexOf(E x){
+        for (int i = ptr - 1; i >= 0; i--) {
+            if(stk[i].equals(x))
+                return i;
+        }
+        return -1;
+    }
+
+    // 스택을 비움
+    public void clear() {
+        ptr = 0;
+    }
+
+    // 스택의 용량을 반환
+    public int capacity() {
+        return max;
+    }
+
+    // 스택에 쌓여 있는 데이터 수를 반환
+    public int size() {
+        return ptr;
+    }
+
+    // 스택이 비어 있는가?
+    public boolean isEmpty() {
+        return ptr <= 0;
+    }
+
+    // 스택이 가득 찼는가?
+    public boolean isFull() {
+        return ptr >= max;
+    }
+
+    // 스택 안의 모든 데이터를 바닥 -> 꼭대기 순서로 출력
+    public void dump() {
+        if (ptr <= 0)
+            System.out.println("스택이 비어 있습니다.");
+        else {
+            for (int i = 0; i < ptr; i++) {
+                System.out.println(stk[i] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
+#### 스택 용량 : max
+- 스택의 용량을 나타내느 필드이다. 이 값은 배열 stk의 요솟수와 같다.
+
+#### 스택 포인터 : ptr
+- 스택에 쌓여 있는 데이터 수를 나타내는 필드이다. 이 값은 스택 포인터(stack pointer)라고 한다.
+
+- 스택이 비어 있으면 ptr 값은 0이 되고, 가득 차 있으면 max 값과 같다.
+
+#### 푸시 메서드 : push
+- 스택에 데이터를 푸시하는 메서드이며, 스택이 가득 차서 푸시할 수 없는 경우 예외로 OverflowGstackException을 던진다.
+```java
+// 스택에 x를 푸시
+public E push(E x) throws OverflowGstackException{
+    if(ptr >= max)
+        throw new OverflowGstackException();
+    return stk[ptr++] = x;
+}
+```
+푸시 메서드를 살펴보면
+
+```java
+if(ptr >= max)
+```
+
+푸시 하기전 스택이 가득 차 있는지 검사하는 부분이다.
+```java
+if(ptr == max)
+```
+위와 같은 등가 연산자를 사용 하여서 검사 할 수도 있지만 프로그래밍 실수와 같은 원인으로 인하여 ptr값이 잘못 입력되면 max를 초과할 수도 있다.
+
+```java
+if(ptr >= max)
+```
+하지만 위와 같이 부등호로 판단하면 스택 본체 배열의 상한과 하한을 벗어나서 접근하는 것을 막을 수 있다.
+
+
+
+
+#### 팝 메서드 : pop
+- 스택의 꼭대기에서 데이터를 팝하고 그 값을 반환하는 메서드이다.
+
+- 스택이 비어 있어 팝을 할 수 없는 경우 예외 EmptyGstackException을 던진다.
+
+#### 검색 메서드 : indexOf
+- 스택 본체의 배열 stk에 x와 같은 값의 데이터가 포함되어 있는지, 포함되어 있다면 배열의 어디에 들어 잇는지를 조사하는 메서드이다.
+
+- 검색은 꼭대기 쪽에서 바닥 쪽으로 선형 검색을 수행한다.
+
+- 꼭대기 쪽에서 스캔하는 이유는 `먼저 팝이 되는 데이터`를 찾기 위해서이다.
+
+#### 스택의 모든 요소를 삭제하는 메서드 : clear
+- clear 메서드는 스택에 쌓여 있는 모든 데이터를 삭제하는 메서드이다.
+
+- 스택에 대한 푸시와 팝 등 모든 작업은 `스택 포인터`를 바탕으로 이루어진다.
+
+- 따라서 스택의 배열 요솟값을 변경할 필요가 없고 모든 요소의 사제는 스택 포인터 ptr 값을 0으로 하면 끝난다.
+
+#### 용량을 확인하는 메서드 : capacity
+- capacity 메서드는 스택의 용량(max의 값)을 반환하는 메서드이다.
+
+#### 데이터 수를 확인하는 메서드 : size
+- size 메서드는 현재 스택에 쌓여 있는 데이터 수(ptr의 값)를 반환한다.
+
+#### 스택이 비어 있는지 검사하는 메서드 : isEmpty
+- isEmpty 메서드는 스택이 비어 있는지 검사하는 메서드이다.
+
+- 스택이 비어 있으면 `true`, 그렇지 않으면 `false`를 반환한다.
+
+#### 스택이 가득 찼는지 검사하는 메서드 : IsFull
+- IsFull 메서드는 스택이 가득 찼는지 검사하는 메서드이다.
+
+- 스택이 가득 찼으면 `true`, 그렇지 않으면 `false`를 반환한다.
+
+#### 스택 안에 있는 모든 데이터를 표시하는 메서드 : dump
+- 스택에 쌓여 있는 모든 데이터를 바닥에서 꼭대기 순으로 표시하는 메서드이다.
+
+
+
+
+
+
+
+---
+## 참고  
+
+* [Do it! 자료구조와 함께 배우는 알고리즘 입문]()  
