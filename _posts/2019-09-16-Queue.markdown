@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Stack"
-date:   2019-09-09 21:05:00
+title:  "Queue"
+date:   2019-09-16 21:05:00
 categories: DataStructure
-tags: Stack
+tags: Queue
 mathjax: true
 ---
 
