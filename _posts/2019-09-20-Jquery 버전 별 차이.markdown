@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Jquery"
+date:   2019-09-20 15:22:00
+categories: Javascript
+tags: Jquery
+mathjax: true
+---
+
+* content
+{:toc}
+
+## Jquery 버전별 분류
+
+- jQuery(제이쿼리)는 HTML의 클라이언트 사이드 조작을 단순화 하도록 `설계된 크로스 플랫폼의 자바스크립트 라이브러리`다.
+
+ > 1 version : 공공기관, 구형브라우저 지원
+ 2 version : IE 지원 점점 줄어듬
+ 3 version : IE 구형 브라우저 지원불가, promise 지원
+
+ `AJAX는 1버전부터 사용가능`
+
+---
+## 참고  
+
+* [jQuery 버전 차이점](https://jintrue.tistory.com/entry/javascript-jQuery-jQuery-%EB%B2%84%EC%A0%84-%EC%B0%A8%EC%9D%B4%EC%A0%90)  
