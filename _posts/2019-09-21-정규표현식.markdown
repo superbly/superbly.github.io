@@ -48,16 +48,13 @@ mathjax: true
 - [0-9] : 0-9까지의 모든 숫자
 - [a-zA-Z0-9] : 대문자 및 소문자의 영문자와 숫자
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
-{: rules="groups"}
+| Header1 | Header2 |
+|:--------|:---------------------------------------------------:|
+| ( )   | 패턴들을 하나의 그룹으로 묶음. <br> ex ) OR 연산자인 \| 과 함께 써서, (txt\|hwp\|doc)과 같이 txt, hwp, doc 세가지에 매치시킬 수 있다. |
+| cell4   | cell5   |
+| cell1   | cell2   |
+| cell4   | cell5   |
+
 
 
 |  \-- | \--- | \-\-- |
